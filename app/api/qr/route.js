@@ -10,7 +10,7 @@ export async function GET(req) {
     });
   }
 
-  const url = `https://https://blackjack-nine-indol.vercel.app/persona/${id}`;
+  const url = `https://blackjack-nine-indol.vercel.app/persona/${id}`;
   const qr = await QRCode.toDataURL(url);
 
   return new Response(JSON.stringify({ qr }), {
